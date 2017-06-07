@@ -1,24 +1,20 @@
 <?php
 /**
- * dribbble plugin for Craft CMS
- *
- * dribbble Variable
+ * Dribbble
  *
  * @author    Jason Mayo
- * @copyright Copyright (c) 2017 Jason Mayo
- * @link      bymayo.co.uk
+ * @twitter   @madebymayo
  * @package   Dribbble
- * @since     1.0.0
+ *
  */
 
 namespace Craft;
 
 class DribbbleVariable
 {
-    /**
-     */
-    public function exampleVariable($optional = null)
+
+    public function get($type, $limit)
     {
-        return "And away we go to the Twig template...";
+        return craft()->dribbble->get($type, $limit);
     }
 }
