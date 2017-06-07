@@ -1,0 +1,26 @@
+{#
+/**
+ * dribbble plugin for Craft CMS
+ *
+ * dribbbleWidget Settings
+ *
+ * @author    Jason Mayo
+ * @copyright Copyright (c) 2017 Jason Mayo
+ * @link      bymayo.co.uk
+ * @package   Dribbble
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% includeCssResource "dribbble/css/Dribbble_Style.css" %}
+{% includeJsResource "dribbble/js/Dribbble_Script.js" %}
+
+{{ forms.textField({
+    label: 'Some Setting',
+    instructions: 'Enter some setting here.',
+    id: 'someSetting',
+    name: 'someSetting',
+    value: settings['someSetting']})
+}}
