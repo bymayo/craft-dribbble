@@ -15,7 +15,7 @@ Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in s
 
 There is only one available Twig tag to pull through anything from the Dribbble API.
 
-The `get` allows you to grab anything from the Dribbble API. For example, if you want to output a list of shots by the authenticated user, you would do the following:
+The `get` tag allows you to pull anything from the Dribbble API. For example, if you want to output a list of shots by the authorised user, you would do the following:
 
 ```HTML
 {% for shot in craft.dribbble.get('user/shots', 10) %}
@@ -23,7 +23,7 @@ The `get` allows you to grab anything from the Dribbble API. For example, if you
 {% endfor %}
 ```
 
-The objects property/values the `get` method outputs depends on the option you specify. The property/values for the above example can be found on 'Shots' http://developer.dribbble.com/v1/users/shots/
+The property/values the `get` method outputs depends on the option you specify. The property/values for the above example can be found under `Shots` (http://developer.dribbble.com/v1/users/shots)
 
 ## Options 
 
