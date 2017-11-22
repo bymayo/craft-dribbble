@@ -29,12 +29,12 @@ class DribbblePlugin extends BasePlugin
 
     public function getDocumentationUrl()
     {
-        return 'https://github.com/madebyshape/dribbble/blob/master/README.md';
+        return 'https://github.com/bymayo/dribbble/blob/master/README.md';
     }
 
     public function getReleaseFeedUrl()
     {
-        return 'https://raw.githubusercontent.com/madebyshape/dribbble/master/releases.json';
+        return 'https://raw.githubusercontent.com/bymayo/dribbble/master/releases.json';
     }
 
     public function getVersion()
