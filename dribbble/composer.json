@@ -1,0 +1,5 @@
+{
+    "require": {
+        "crewlabs/oauth2-dribbble": "^1.0"
+    }
+}

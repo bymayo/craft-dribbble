@@ -20,7 +20,7 @@ class DribbbleService extends BaseApplicationComponent
 	
 	public function auth($type, $limit = null)
 	{
-		return 'https://api.dribbble.com/v1/' . $type . '?per_page=' . $limit .'&access_token=' . $this->getSetting('accessToken');
+		return 'https://api.dribbble.com/v2/' . $type . '?per_page=' . $limit .'&access_token=' . $this->getSetting('accessToken');
 	}
 	
     public function parseJson($json)
