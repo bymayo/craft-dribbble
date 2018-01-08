@@ -16,6 +16,7 @@ class DribbblePlugin extends BasePlugin
     public function init()
     {
         parent::init();
+        
     }
 
     public function getName()
@@ -49,7 +50,7 @@ class DribbblePlugin extends BasePlugin
 
     public function getDeveloper()
     {
-        return 'Jason Mayo';
+        return 'ByMayo';
     }
 
     public function getDeveloperUrl()
