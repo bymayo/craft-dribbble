@@ -15,6 +15,9 @@ class DribbblePlugin extends BasePlugin
 
     public function init()
     {
+	    
+		require_once __DIR__ . '/vendor/autoload.php';
+	    
         parent::init();
         
     }
@@ -66,7 +69,9 @@ class DribbblePlugin extends BasePlugin
     protected function defineSettings()
     {
         return array(
-            'accessToken' => array(AttributeType::String, 'label' => 'Access Token', 'default' => ''),
+            'clientId' => array(AttributeType::String, 'label' => 'Client ID', 'default' => ''),
+            'clientSecret' => array(AttributeType::String, 'label' => 'Client Secret', 'default' => ''),
+            'oauthAccessToken' => array(AttributeType::String, 'label' => 'oAuth Access Token', 'default' => '')
         );
     }
 

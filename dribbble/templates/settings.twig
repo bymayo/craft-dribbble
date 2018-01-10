@@ -1,8 +1,20 @@
 {% import "_includes/forms" as forms %}
 
+{{ siteUrl }}<br>
+{{ siteUrl }}<br>
+
 {{ forms.textField({
-    label: 'Access Token',
-    id: 'accessToken',
-    name: 'accessToken', 
-    value: settings['accessToken']})
+    label: 'Client ID',
+    id: 'clientId',
+    name: 'clientId', 
+    required: true,
+    value: settings['clientId']})
+}}
+
+{{ forms.textField({
+    label: 'Client Secret',
+    id: 'clientSecret',
+    name: 'clientSecret', 
+    required: true,
+    value: settings['clientSecret']})
 }}

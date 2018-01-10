@@ -17,4 +17,9 @@ class DribbbleVariable
     {
         return craft()->dribbble->get($type, $limit);
     }
+    
+    public function test()
+    {
+        return craft()->dribbble->oauth();
+    }
 }
