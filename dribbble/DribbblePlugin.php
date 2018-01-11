@@ -28,7 +28,7 @@ class DribbblePlugin extends BasePlugin
     }
     public function getDescription()
     {
-        return Craft::t('Connect to Dribbble API to pull shots, buckets, user etc data.');
+        return Craft::t('Connect to Dribbble API to pull in shots, projects, user etc via Twig.');
     }
 
     public function getDocumentationUrl()

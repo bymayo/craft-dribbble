@@ -1,15 +1,15 @@
 # Dribbble
 
-Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in shots, users, buckets etc via Twig.
+Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in shots, projects, user etc via Twig.
 
 ## Install
 
 - Add the `dribbble` directory into your `craft/plugins` directory.
 - Navigate to `Settings -> Plugins` and click the "Install" button.
-- Register your application with Dribbble Developer - http://developer.dribbble.com.
-- Once you've registered your application, copy the `Client Access Token`.
-- Navigation to `Settings -> Plugins` and click on settings for Dribbble (Little cog Icon)
-- Paste your `Client Access Token` in to `Access Token` field, and save.
+- Navigate to `Settings -> Plugins` and click on settings for Dribbble (Little cog Icon)
+- Register your application with Dribbble - https://dribbble.com/account/applications/new using the `Website URL` and `Callback URL` in the plugin settings.
+- Once you've registered your application, copy the `Client ID` and `Client Secret` and fill in the correct fields in plugin settings.
+- When your settings have saved click `Connect to Dribbble` and authorise Dribbble to connect to Craft CMS.
  
 ## Templating
 
@@ -23,7 +23,7 @@ The `get` tag allows you to pull anything from the Dribbble API. For example, if
 {% endfor %}
 ```
 
-The property/values the `get` method outputs depends on the option you specify. The property/values for the above example can be found under `Shots` (http://developer.dribbble.com/v1/users/shots)
+The property/values the `get` method outputs depends on the option you specify. The property/values for the above example can be found under `Shots` (http://developer.dribbble.com/v2/shots)
 
 ## Options 
 
@@ -38,7 +38,7 @@ The property/values the `get` method outputs depends on the option you specify. 
 		<td>GET</td>
 		<td>string</td>
 		<td>null</td>
-		<td>You can use any GET option from the Dribbble API (http://developer.dribbble.com/v1/) e.g. `buckets/madebymayo` or `users/madebymayo/shots`. Also check to see what property/values are output for each GET option</td>
+		<td>You can use any GET option from the Dribbble API (http://developer.dribbble.com/v2/) e.g. `user/projects` or `user/shots`. Also check to see what property/values are output for each GET option</td>
 	</tr>
 	<tr>
 		<td>Limit</td>
