@@ -51,3 +51,7 @@ The property/values the `get` method outputs depends on the option you specify. 
 ## Notes
 
 Remember, Dribbble is spelt with 3 b's. Check your spellings 😎
+
+## Roadmap
+
+- Fieldtype to select specific shots to show in an entry
