@@ -25,7 +25,7 @@ class DribbbleService extends BaseApplicationComponent
 	
 	public function auth($type, $limit = null)
 	{
-		return 'https://api.dribbble.com/v2/' . $type . '?per_page=' . $limit .'&access_token=' . $this->getSetting('accessToken');
+		return 'https://api.dribbble.com/v1/' . $type . '?per_page=' . $limit .'&access_token=' . $this->getSetting('oauthAccessToken');
 	}
 	
     public function parseJson($json)
@@ -67,28 +67,45 @@ class DribbbleService extends BaseApplicationComponent
 		
     }
     
-    public function oauth()
-	{
-		
+    public function disconnect()
+    {
+	    
+		craft()->plugins->savePluginSettings(
+	    	craft()->plugins->getPlugin('dribbble'), 
+	    	array(
+	    		'oauthAccessToken' => null
+	    	)
+	    );
+	    
+    }
+    
+    public function connect()
+    {
+
 		$provider = new \CrewLabs\OAuth2\Client\Provider\Dribbble([
-		    'clientId'          => '0643f71110b2d862e9e8a9b7b4f029015076cbde5c4513fb87b55a20f5f8ec36',
-		    'clientSecret'      => '7e9af7d98edc65b3d30cf7ca1ebaa42739d42cab4b778415b90769d964974e2d',
-		    'redirectUri'       => 'http://madebyshape.local/admin/dribbble/oauth',
+		    'clientId'          => $this->getSetting('clientId'),
+		    'clientSecret'      => $this->getSetting('clientSecret'),
+		    'redirectUri'       => UrlHelper::getActionUrl('dribbble/connect'),
 		]);
 		
-		if (!isset($_GET['code'])) {
+		if (!isset($_GET['code'])) 
+		{
 		
 		    $authUrl = $provider->getAuthorizationUrl();
 		    $_SESSION['oauth2state'] = $provider->getState();
 		    header('Location: '. $authUrl);
 		    exit;
 		
-		} elseif (empty($_GET['state']) || ($_GET['state'] !== $_SESSION['oauth2state'])) {
+		} 
+		elseif (empty($_GET['state']) || ($_GET['state'] !== $_SESSION['oauth2state'])) 
+		{
 		
 		    unset($_SESSION['oauth2state']);
-		    exit('Invalid state');
+		    return false;
 		
-		} else {
+		} 
+		else 
+		{
 		
 		    $token = $provider->getAccessToken(
 		    	'authorization_code', 
@@ -104,13 +121,10 @@ class DribbbleService extends BaseApplicationComponent
 		    	)
 		    );
 		    
-		    DribbblePlugin::log('Test');
-		    DribbblePlugin::log($token->getToken());
-		    
 		    return true;
 
 		}
-		
-	}
+
+    }
 
 }

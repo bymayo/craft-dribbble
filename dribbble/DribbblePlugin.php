@@ -28,7 +28,7 @@ class DribbblePlugin extends BasePlugin
     }
     public function getDescription()
     {
-        return Craft::t('Gets data from Dribbble API');
+        return Craft::t('Connect to Dribbble API to pull shots, buckets, user etc data.');
     }
 
     public function getDocumentationUrl()
@@ -43,12 +43,12 @@ class DribbblePlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '1.0.0';
+        return '1.0.1';
     }
 
     public function getSchemaVersion()
     {
-        return '1.0.0';
+        return '1.0.1';
     }
 
     public function getDeveloper()

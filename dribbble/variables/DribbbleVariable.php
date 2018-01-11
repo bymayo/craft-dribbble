@@ -18,8 +18,8 @@ class DribbbleVariable
         return craft()->dribbble->get($type, $limit);
     }
     
-    public function test()
+    public function getSetting($name)
     {
-        return craft()->dribbble->oauth();
+        return craft()->dribbble->getSetting($name);
     }
 }

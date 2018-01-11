@@ -1,0 +1,22 @@
+.status-container {
+	background: #f6f7f9;
+	padding: 20px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	border: 1px solid #e3e5e8;
+	font-size: 15px;
+}
+
+.alert {
+	margin-bottom: 20px;
+	background-color: #fff7db;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+code {
+	display: inline-block;
+	border-radius: 3px;
+	border: 1px solid #e3e5e8;
+	padding: 8px 12px;
+}

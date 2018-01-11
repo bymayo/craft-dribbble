@@ -1,7 +1,36 @@
 {% import "_includes/forms" as forms %}
 
-{{ siteUrl }}<br>
-{{ siteUrl }}<br>
+{% includeCssResource 'dribbble/css/style.css' %}
+
+<div class="status-container">
+	{% if craft.dribbble.getSetting('oauthAccessToken')|length %}
+		<div class="status live"></div>Perfect! You're connected to Dribbble 🎉
+	{% else %}
+		<div class="status expired"></div>Oh no, you're currently not connected to Dribbble	☹️	
+	{% endif %}
+</div>
+
+<h2>Step 1</h2>
+
+<p>
+	Create a new application on your Dribbble account using the <strong>Website URL</strong> and <strong>Callback URL</strong> in the application settings. <a href="https://dribbble.com/account/applications/new" target="_blank">Register New Application &rarr;</a>
+	</p>
+
+<p>
+	<h4>Website URL</h4>
+	<code>{{ siteUrl }}</code>
+</p>
+
+<p>
+	<h4>Callback URL</h4>
+	<code>{{ siteUrl }}</code>
+</p>
+
+<hr>
+
+<h2>Step 2</h2>
+
+<p>Once you've register your application, enter the <strong>Client ID</strong> and <strong>Client Secret</strong> in the fields below.
 
 {{ forms.textField({
     label: 'Client ID',
@@ -18,3 +47,26 @@
     required: true,
     value: settings['clientSecret']})
 }}
+
+<hr>
+
+<h2>Step 3</h2>
+
+{% if craft.dribbble.getSetting('clientId')|length and craft.dribbble.getSetting('clientSecret')|length %}
+	{% if craft.dribbble.getSetting('oauthAccessToken')|length %}
+		<a href="{{ actionUrl('dribbble/disconnect') }}" class="btn">
+			Disconnect from Dribbble
+		</a>
+	{% else %}
+		<a href="{{ actionUrl('dribbble/connect') }}" class="btn submit">
+			Connect to Dribbble
+		</a>
+	{% endif %}
+{% else %}
+	<div class="alert">
+		⚠️ Your <strong>Client ID</strong> and <strong>Client Secret</strong> settings haven't been saved.
+	</div>
+	<a href="" class="btn submit disabled">
+		Connect to Dribbble
+	</a>
+{% endif %}
