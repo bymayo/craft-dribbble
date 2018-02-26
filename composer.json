@@ -1,0 +1,7 @@
+{
+    "name": "bymayo/dribbble",
+    "description": "Connect to Dribbble API to pull in shots, projects, user etc via Twig.",
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    }
+}
