@@ -410,17 +410,17 @@
     },
     {
         "name": "crewlabs/oauth2-dribbble",
-        "version": "1.0.1",
-        "version_normalized": "1.0.1.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/CrewLabs/oauth2-dribbble.git",
-            "reference": "423d41ceb0f4b9e250984cd81fa08bb32502ab9b"
+            "url": "https://github.com/bymayo/oauth2-dribbble.git",
+            "reference": "be7e9c4d84c98271881f83e4a78f99dbe9afd1bf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/CrewLabs/oauth2-dribbble/zipball/423d41ceb0f4b9e250984cd81fa08bb32502ab9b",
-            "reference": "423d41ceb0f4b9e250984cd81fa08bb32502ab9b",
+            "url": "https://api.github.com/repos/bymayo/oauth2-dribbble/zipball/be7e9c4d84c98271881f83e4a78f99dbe9afd1bf",
+            "reference": "be7e9c4d84c98271881f83e4a78f99dbe9afd1bf",
             "shasum": ""
         },
         "require": {
@@ -432,15 +432,19 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~2.0"
         },
-        "time": "2017-01-03T11:40:40+00:00",
+        "time": "2018-02-26T15:46:07+00:00",
         "type": "library",
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "CrewLabs\\OAuth2\\Client\\": "src/"
             }
         },
-        "notification-url": "https://packagist.org/downloads/",
+        "autoload-dev": {
+            "psr-4": {
+                "CrewLabs\\OAuth2\\Client\\Test\\": "test/src/"
+            }
+        },
         "license": [
             "MIT"
         ],
@@ -452,16 +456,19 @@
         ],
         "description": "Dribbble OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
         "keywords": [
-            "Authentication",
+            "Dribbble",
             "Dribble",
-            "SSO",
+            "authentication",
             "authorization",
-            "dribbble",
             "identity",
             "idp",
             "oauth",
             "oauth2",
-            "single sign on"
-        ]
+            "single sign on",
+            "sso"
+        ],
+        "support": {
+            "source": "https://github.com/bymayo/oauth2-dribbble/tree/master"
+        }
     }
 ]

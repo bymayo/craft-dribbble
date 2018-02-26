@@ -43,7 +43,7 @@ class Dribbble extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://api.dribbble.com/v1/user?' . http_build_query(['access_token' => $token->getToken()]);
+        return 'https://api.dribbble.com/v2/user?' . http_build_query(['access_token' => $token->getToken()]);
     }
 
     /**

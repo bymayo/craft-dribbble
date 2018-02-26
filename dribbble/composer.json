@@ -1,5 +1,11 @@
 {
+	"repositories": [
+	    {
+	        "type": "vcs",
+	        "url": "http://github.com/bymayo/oauth2-dribbble"
+	    }
+	],	
     "require": {
-        "crewlabs/oauth2-dribbble": "^1.0"
+        "crewlabs/oauth2-dribbble": "dev-master"
     }
 }
