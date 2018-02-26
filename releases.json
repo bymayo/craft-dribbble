@@ -1,4 +1,12 @@
 [
+{
+        "version": "1.0.2",
+        "downloadUrl": "https://github.com/bymayo/dribbble/archive/master.zip",
+        "date": "2018-02-26T09:00:58.586Z",
+        "notes": [
+            "[Added] Dribbble v2 API"
+        ]
+    },
 	{
         "version": "1.0.1",
         "downloadUrl": "https://github.com/bymayo/dribbble/archive/master.zip",
