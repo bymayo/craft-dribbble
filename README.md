@@ -6,7 +6,7 @@ Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in s
 
 ## Requirements
 
-- Craft CMS 3.x.x
+- Craft CMS 3.x
 
 ## Setup
 
@@ -53,7 +53,8 @@ The property/values the `get` method outputs depends on the option you specify. 
 
 ## Notes
 
-Remember, Dribbble is spelt with 3 b's. Check your spellings 😎
+- Using the `user/likes` GET method is not available unless you contact Dribbble for a special token
+- Remember, Dribbble is spelt with 3 b's. Check your spellings 😎
 
 ## Roadmap
 
