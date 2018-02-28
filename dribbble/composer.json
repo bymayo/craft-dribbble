@@ -1,11 +1,51 @@
 {
-	"repositories": [
+    "name": "bymayo/dribbble",
+    "description": "Connect to Dribbble API to pull in shots, projects, user etc via Twig.",
+    "type": "craft-plugin",
+    "version": "2.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "dribbble"
+    ],
+    "support": {
+        "docs": "https://github.com/ByMayo/dribbble/blob/master/README.md",
+        "issues": "https://github.com/ByMayo/dribbble/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ByMayo",
+            "homepage": "http://bymayo.co.uk"
+        }
+    ],
+    "repositories": [
 	    {
 	        "type": "vcs",
-	        "url": "http://github.com/bymayo/oauth2-dribbble"
+	        "url": "https://github.com/bymayo/oauth2-dribbble"
 	    }
-	],	
+	],
     "require": {
-        "crewlabs/oauth2-dribbble": "dev-master"
+        "craftcms/cms": "^3.0.0-RC1",
+        "crewlabs/oauth2-dribbble": "dev-api2"
+    },
+    "autoload": {
+        "psr-4": {
+          "bymayo\\dribbble\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Dribbble",
+        "handle": "dribbble",
+        "schemaVersion": "2.0.0",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/ByMayo/dribbble/master/CHANGELOG.md",
+        "components": {
+            "dribbbleService": "bymayo\\dribbble\\services\\DribbbleService"
+        },
+        "class": "bymayo\\dribbble\\Dribbble"
     }
 }

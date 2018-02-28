@@ -1,9 +1,9 @@
 {% import "_includes/forms" as forms %}
 
-{% includeCssResource 'dribbble/css/style.css' %}
+{% do view.registerAssetBundle("bymayo\\dribbble\\assetbundles\\dribbble\\DribbbleAsset") %}
 
 <div class="status-container">
-	{% if craft.dribbble.getSetting('oauthAccessToken')|length %}
+	{% if settings.oauthAccessToken|length %}
 		<div class="status live"></div>Perfect! You're connected to Dribbble 🎉
 	{% else %}
 		<div class="status expired"></div>Oh no, you're currently not connected to Dribbble	☹️	
@@ -37,7 +37,7 @@
     id: 'clientId',
     name: 'clientId', 
     required: true,
-    value: settings['clientId']})
+    value: settings.clientId })
 }}
 
 {{ forms.textField({
@@ -45,15 +45,15 @@
     id: 'clientSecret',
     name: 'clientSecret', 
     required: true,
-    value: settings['clientSecret']})
+    value: settings.clientSecret })
 }}
 
 <hr>
 
 <h2>Step 3</h2>
 
-{% if craft.dribbble.getSetting('clientId')|length and craft.dribbble.getSetting('clientSecret')|length %}
-	{% if craft.dribbble.getSetting('oauthAccessToken')|length %}
+{% if settings.clientId|length and settings.clientSecret|length %}
+	{% if settings.oauthAccessToken|length %}
 		<a href="{{ actionUrl('dribbble/disconnect') }}" class="btn">
 			Disconnect from Dribbble
 		</a>
