@@ -21,15 +21,9 @@
             "homepage": "http://bymayo.co.uk"
         }
     ],
-    "repositories": [
-	    {
-	        "type": "vcs",
-	        "url": "https://github.com/bymayo/oauth2-dribbble"
-	    }
-	],
     "require": {
         "craftcms/cms": "^3.0.0-RC1",
-        "crewlabs/oauth2-dribbble": "dev-api2"
+        "bymayo/oauth2-dribbble": "*"
     },
     "autoload": {
         "psr-4": {
