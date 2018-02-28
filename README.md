@@ -12,6 +12,10 @@ Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in s
 
 - Craft CMS 3.x
 
+## Install
+
+Install via the Plugin Store within your Craft 3 installation or using Composer: `composer require bymayo/dribbble`
+
 ## Setup
 
 - Register your application with Dribbble - https://dribbble.com/account/applications/new using the `Website URL` and `Callback URL` in the plugin settings.
