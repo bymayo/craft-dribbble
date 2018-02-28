@@ -4,6 +4,10 @@
 
 Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in shots, projects, user etc via Twig.
 
+## Requirements
+
+- Craft CMS 3.x.x
+
 ## Setup
 
 - Register your application with Dribbble - https://dribbble.com/account/applications/new using the `Website URL` and `Callback URL` in the plugin settings.
@@ -55,6 +59,6 @@ Remember, Dribbble is spelt with 3 b's. Check your spellings 😎
 
 - Fieldtype to select specific shots to show in an entry
 
--
+---
 
 Brought to you by [ByMayo](http://bymayo.co.uk)
