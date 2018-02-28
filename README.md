@@ -1,8 +1,8 @@
-**Looking for Craft 2 Support?** [Dribbble for Craft 2](https://github.com/bymayo/dribbble/tree/craft-2)
-
 [![Latest Stable Version](https://poser.pugx.org/bymayo/dribbble/v/stable?format=flat)](https://packagist.org/packages/bymayo/dribbble)
 [![Total Downloads](https://poser.pugx.org/bymayo/dribbble/downloads?format=flat)](https://packagist.org/packages/bymayo/dribbble)
 [![License](https://poser.pugx.org/bymayo/dribbble/license?format=flat)](https://packagist.org/packages/bymayo/dribbble)
+
+**Looking for Craft 2 Support?** [Dribbble for Craft 2](https://github.com/bymayo/dribbble/tree/craft-2)
 
 # Dribbble
 
