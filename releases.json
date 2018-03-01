@@ -1,7 +1,15 @@
 [
-{
+	{
+        "version": "1.0.3",
+        "downloadUrl": "https://github.com/bymayo/dribbble/archive/craft-2.zip",
+        "date": "2018-03-01T09:00:58.586Z",
+        "notes": [
+            "[Added] Fixed required dependencies in Composer"
+        ]
+    },
+	{
         "version": "1.0.2",
-        "downloadUrl": "https://github.com/bymayo/dribbble/archive/master.zip",
+        "downloadUrl": "https://github.com/bymayo/dribbble/archive/craft-2.zip",
         "date": "2018-02-26T09:00:58.586Z",
         "notes": [
             "[Added] Dribbble v2 API"
@@ -9,7 +17,7 @@
     },
 	{
         "version": "1.0.1",
-        "downloadUrl": "https://github.com/bymayo/dribbble/archive/master.zip",
+        "downloadUrl": "https://github.com/bymayo/dribbble/archive/craft-2.zip",
         "date": "2018-01-10T09:00:58.586Z",
         "notes": [
             "[Added] Connect to Dribbble with oAuth instead of Access Tokens"
@@ -17,7 +25,7 @@
     },
     {
         "version": "1.0.0",
-        "downloadUrl": "https://github.com/bymayo/dribbble/archive/master.zip",
+        "downloadUrl": "https://github.com/bymayo/dribbble/archive/craft-2.zip",
         "date": "2017-06-07T09:00:58.586Z",
         "notes": [
             "[Added] Initial release"
