@@ -33,22 +33,22 @@ class DribbblePlugin extends BasePlugin
 
     public function getDocumentationUrl()
     {
-        return 'https://github.com/bymayo/dribbble/blob/master/README.md';
+        return 'https://github.com/bymayo/dribbble/blob/craft-2/README.md';
     }
 
     public function getReleaseFeedUrl()
     {
-        return 'https://raw.githubusercontent.com/bymayo/dribbble/master/releases.json';
+        return 'https://github.com/bymayo/dribbble/blob/craft-2/releases.json';
     }
 
     public function getVersion()
     {
-        return '1.0.2';
+        return '1.0.3';
     }
 
     public function getSchemaVersion()
     {
-        return '1.0.2';
+        return '1.0.3';
     }
 
     public function getDeveloper()

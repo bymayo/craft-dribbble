@@ -25,7 +25,7 @@ class DribbbleService extends BaseApplicationComponent
 	
 	public function auth($type, $limit = null)
 	{
-		return 'https://api.dribbble.com/v1/' . $type . '?per_page=' . $limit .'&access_token=' . $this->getSetting('oauthAccessToken');
+		return 'https://api.dribbble.com/v2/' . $type . '?per_page=' . $limit .'&access_token=' . $this->getSetting('oauthAccessToken');
 	}
 	
     public function parseJson($json)
@@ -44,19 +44,11 @@ class DribbbleService extends BaseApplicationComponent
 
     public function request($authUrl)
     {
-	    
-		$client  = new \Guzzle\Http\Client(
-			$authUrl, 
-			array(
-				'request.options' => array(
-					'exceptions' => false,
-				)
-			)
-		);
-		$request = $client->get($authUrl);
-		$response = $request->send();
 		
-		return $this->parseJson($response->getBody(true), true);
+		$client  = new \GuzzleHttp\Client();
+		$response = $client->request('GET', $authUrl);
+		
+		return $this->parseJson($response->getBody());
 	    
     }
     
