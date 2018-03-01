@@ -1,3 +1,5 @@
+**Looking for Craft 3 Support?** [Dribbble for Craft 3](https://github.com/bymayo/dribbble/)
+
 # Dribbble
 
 Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in shots, projects, user etc via Twig.
