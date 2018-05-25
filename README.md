@@ -1,10 +1,8 @@
-[![Latest Stable Version](https://poser.pugx.org/bymayo/dribbble/v/stable?format=flat)](https://packagist.org/packages/bymayo/dribbble)
-[![Total Downloads](https://poser.pugx.org/bymayo/dribbble/downloads?format=flat)](https://packagist.org/packages/bymayo/dribbble)
-[![License](https://poser.pugx.org/bymayo/dribbble/license?format=flat)](https://packagist.org/packages/bymayo/dribbble)
-
 **Looking for Craft 2 Support?** [Dribbble for Craft 2](https://github.com/bymayo/dribbble/tree/craft-2)
 
-# Dribbble
+<img src="https://github.com/bymayo/dribbble/blob/master/resources/img/icon.png?raw=true" width="50">
+
+# Dribbble for Craft 3.x
 
 Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in shots, projects, user etc via Twig.
 
@@ -21,7 +19,7 @@ Install via the Plugin Store within your Craft 3 installation or using Composer:
 - Register your application with Dribbble - https://dribbble.com/account/applications/new using the `Website URL` and `Callback URL` in the plugin settings.
 - Once you've registered your application, copy the `Client ID` and `Client Secret` and fill in the correct fields in plugin settings.
 - When your settings have saved click `Connect to Dribbble` and authorise Dribbble to connect to Craft CMS.
- 
+
 ## Templating
 
 There is only one available Twig tag to pull through anything from the Dribbble API.
@@ -36,7 +34,7 @@ The `get` tag allows you to pull anything from the Dribbble API. For example, if
 
 The property/values the `get` method outputs depends on the option you specify. The property/values for the above example can be found under `Shots` (http://developer.dribbble.com/v2/shots)
 
-## Options 
+## Options
 
 <table>
 	<tr>
