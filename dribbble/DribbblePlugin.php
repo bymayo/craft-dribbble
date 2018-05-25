@@ -15,11 +15,11 @@ class DribbblePlugin extends BasePlugin
 
     public function init()
     {
-	    
+
 		require_once __DIR__ . '/vendor/autoload.php';
-	    
+
         parent::init();
-        
+
     }
 
     public function getName()
@@ -43,12 +43,12 @@ class DribbblePlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '1.0.3';
+        return '1.0.4';
     }
 
     public function getSchemaVersion()
     {
-        return '1.0.3';
+        return '1.0.4';
     }
 
     public function getDeveloper()
@@ -78,7 +78,7 @@ class DribbblePlugin extends BasePlugin
     public function getSettingsHtml()
     {
 		return craft()->templates->render(
-		'dribbble/settings', 
+		'dribbble/settings',
 			array(
 				'settings' => $this->getSettings()
 			)
