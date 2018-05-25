@@ -1,6 +1,8 @@
 **Looking for Craft 3 Support?** [Dribbble for Craft 3](https://github.com/bymayo/dribbble/)
 
-# Dribbble
+<img src="https://github.com/bymayo/dribbble/blob/craft-2/screenshots/icon.png?raw=true" width="50">
+
+# Dribbble for Craft 2.x
 
 Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in shots, projects, user etc via Twig.
 
@@ -12,7 +14,7 @@ Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in s
 - Register your application with Dribbble - https://dribbble.com/account/applications/new using the `Website URL` and `Callback URL` in the plugin settings.
 - Once you've registered your application, copy the `Client ID` and `Client Secret` and fill in the correct fields in plugin settings.
 - When your settings have saved click `Connect to Dribbble` and authorise Dribbble to connect to Craft CMS.
- 
+
 ## Templating
 
 There is only one available Twig tag to pull through anything from the Dribbble API.
@@ -27,7 +29,7 @@ The `get` tag allows you to pull anything from the Dribbble API. For example, if
 
 The property/values the `get` method outputs depends on the option you specify. The property/values for the above example can be found under `Shots` (http://developer.dribbble.com/v2/shots)
 
-## Options 
+## Options
 
 <table>
 	<tr>
