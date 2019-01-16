@@ -1,14 +1,13 @@
-**Looking for Craft 2 Support?** [Dribbble for Craft 2](https://github.com/bymayo/dribbble/tree/craft-2)
-
 <img src="https://github.com/bymayo/dribbble/blob/master/resources/img/icon.png?raw=true" width="50">
 
-# Dribbble for Craft 3.x
+# Dribbble for Craft CMS 3.x
 
 Dribbble is a Craft CMS plugin that enables use of the Dribbble API to pull in shots, projects, user etc via Twig.
 
 ## Requirements
 
 - Craft CMS 3.x
+- MySQL (No PostgreSQL support)
 
 ## Install
 
