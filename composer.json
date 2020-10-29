@@ -2,7 +2,7 @@
     "name": "bymayo/dribbble",
     "description": "Connect to Dribbble API to pull in shots, projects, user etc via Twig.",
     "type": "craft-plugin",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "keywords": [
         "craft",
         "cms",

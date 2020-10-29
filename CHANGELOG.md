@@ -1,5 +1,9 @@
 # Dribbble Changelog
 
+## 2.0.3 - 2020-10-29
+### Fixed
+- Composer 2 compatibility
+
 ## 2.0.2 - 2018-05-25
 ### Changed
 - Updated Icons & Branding
