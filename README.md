@@ -1,3 +1,5 @@
+> ⚠️ Deprecated - This Craft CMS 3.x plugin is no longer supported and won't be upgraded to later versions of Craft CMS.
+
 <img src="https://github.com/bymayo/dribbble/blob/master/resources/img/icon.png?raw=true" width="50">
 
 # Dribbble for Craft CMS 3.x
